@@ -2,5 +2,5 @@ name: e2e-test-plugin
 version: ${project.version}
 author: Slimefun Org
 description: E2E testing
-main: io.github.slimefun.E2ETester
+main: io.github.slimefun.e2etester.E2ETester
 api-version: '1.16'
