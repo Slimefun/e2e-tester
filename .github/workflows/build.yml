@@ -36,7 +36,7 @@ jobs:
     - name: Upload
       if: ${{ github.repository_owner == 'Slimefun' && github.ref == 'refS/heads/main' }}
       run: |
-        curl -v -X POST \
+        curl -X POST \
           -H 'Authorization: ${{ secrets.PUBLISH_TOKEN }}' \
           -H "X-Checksum: $(sha256sum target/e2e-test-plugin.jar | awk '{print $1}')" \
           --data-binary '@target/e2e-test-plugin.jar' \
