@@ -10,4 +10,5 @@ import java.lang.annotation.Target;
 public @interface E2ETest {
 
 	String description();
+	boolean threadSafe() default false;
 }

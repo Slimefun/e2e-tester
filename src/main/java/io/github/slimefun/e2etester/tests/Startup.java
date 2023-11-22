@@ -16,6 +16,6 @@ public class Startup {
 	@E2ETest(description =  "Test that `/sf versions` runs successfully")
 	public void testVersionsCommandCanBeRun() {
 		// Run /sf versions and make sure it doesn't error
-		Assert.runConsoleCommand("sf versions", (output) -> output.contains("Slimefun 4.9-UNOFFICIAL"));
+		Assert.runConsoleCommand("sf versions", (output) -> output.contains("Slimefun Preview Build"));
 	}
 }

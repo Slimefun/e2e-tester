@@ -14,7 +14,7 @@ public class VersionsTest {
 
 	@E2ETest(description = "Test that `/sf versions` returns the right SF version")
 	public void testSlimefunVersion() {
-		Assert.runConsoleCommand("sf versions", (output) -> output.contains("Slimefun 4.9-UNOFFICIAL"));
+		Assert.runConsoleCommand("sf versions", (output) -> output.contains("Slimefun Preview Build"));
 	}
 
 	@E2ETest(description = "Test that `/sf versions` returns the right Java version")
